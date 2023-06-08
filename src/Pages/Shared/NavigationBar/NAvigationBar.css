@@ -1,0 +1,32 @@
+.dropdown-button {
+    padding: 8px 16px;
+    background-color: #115c8f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    padding: 8px;
+    display: none;
+  }
+  
+  .dropdown-menu p {
+    margin: 0;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu p:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown-button:hover + .dropdown-menu,
+  .dropdown-menu:hover {
+    display: block;
+  }
+  
