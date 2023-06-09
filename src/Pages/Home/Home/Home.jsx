@@ -3,6 +3,9 @@ import CoverSlider from '../CoverSlider/CoverSlider';
 import Services from '../Services/Services';
 import Idiology from '../Idiology/Idiology';
 import LeaderInspiration from '../LeaderInspiration/LeaderInspiration';
+import UpcomingEvent from '../UpcomingEvent/UpcomingEvent';
+import ShishuAcademy from '../ShishuAcademy/ShishuAcademy';
+import Initiativs from '../Initiatives/Initiativs';
 
 const Home = () => {
     return (
@@ -11,6 +14,9 @@ const Home = () => {
             <Services></Services>
             <Idiology></Idiology>
             <LeaderInspiration></LeaderInspiration>
+            <UpcomingEvent></UpcomingEvent>
+            <ShishuAcademy></ShishuAcademy>
+            <Initiativs></Initiativs>
         </div>
     );
 };

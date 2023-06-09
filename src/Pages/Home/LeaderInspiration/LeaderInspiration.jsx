@@ -11,8 +11,9 @@ const LeaderInspiration = () => {
       easing: "ease-in-out",
     });
   }, []);
+  
   return (
-    <div className="bg-[#0080d7] py-8">
+    <div className="bg-[#0080d7] py-8 overflow-x-hidden">
       <div>
         <div
           data-aos="fade-left"
