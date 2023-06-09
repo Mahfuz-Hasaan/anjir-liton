@@ -3,7 +3,7 @@ import React from 'react';
 const FooterBar = () => {
     return (
         <div>
-            <p>NAvigation bar</p>
+            <p>Footer bar</p>
         </div>
     );
 };
