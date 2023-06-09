@@ -1,9 +1,10 @@
 import React from 'react';
+import CoverSlider from '../CoverSlider/CoverSlider';
 
 const Home = () => {
     return (
         <div>
-            <p>HOme is</p>
+            <CoverSlider></CoverSlider>
         </div>
     );
 };
