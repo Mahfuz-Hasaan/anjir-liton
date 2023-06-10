@@ -17,7 +17,7 @@ const Initiativs = () => {
     });
   }, []);
   return (
-    <div>
+    <div className="pb-20">
       <div className="py-8 overflow-x-hidden">
         <div>
           <div
