@@ -17,14 +17,14 @@ const Initiativs = () => {
     });
   }, []);
   return (
-    <div className="pb-20">
+    <div className="pb-20 px-3">
       <div className="py-8 overflow-x-hidden">
         <div>
           <div
             data-aos="fade-up"
-            className="flex justify-center items-center gap-20"
+            className="flex lg:flex-row flex-col justify-center items-center gap-20"
           >
-            <div className="space-y-6 w-4/12">
+            <div className="space-y-6 lg:w-4/12">
               <p className="text-3xl font-bold  text-[#0080d7]">
               INITIATIVES
               </p>

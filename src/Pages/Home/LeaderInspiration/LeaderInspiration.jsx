@@ -13,11 +13,11 @@ const LeaderInspiration = () => {
   }, []);
   
   return (
-    <div className="bg-[#0080d7] py-8 overflow-x-hidden">
+    <div className="bg-[#0080d7] py-8 overflow-x-hidden px-3">
       <div>
         <div
           data-aos="fade-left"
-          className="flex justify-center items-center gap-20"
+          className="flex lg:flex-row flex-col items-start lg:justify-center lg:items-center gap-20"
         >
           <div className="space-y-6 text-white">
             <p className="text-2xl font-bold">MY LEADER AND INSPIRATION</p>
@@ -29,7 +29,7 @@ const LeaderInspiration = () => {
             </div>
           </div>
 
-          <img className="w-4/12" src={primeminister} alt="" />
+          <img className="lg:w-4/12" src={primeminister} alt="" />
         </div>
       </div>
     </div>

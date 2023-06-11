@@ -11,7 +11,7 @@ import img_4 from "../../../assets/cardCarousel/4.jpg";
 import SwiperCore, { Autoplay } from "swiper";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import './MediaCoverage.css'
 SwiperCore.use([Autoplay]);
 
 const MediaCoverage = () => {
@@ -51,7 +51,7 @@ const MediaCoverage = () => {
         </p>
         <div className="lg:w-8/12 mx-auto relative">
           <div
-            className="absolute left-[-60px] top-[300px] border-2 rounded-full p-2 text-2xl bg-white cursor-pointer"
+            className="absolute lg:left-[-60px] lg:top-[300px] border-2 rounded-full p-2 text-2xl bg-white cursor-pointer"
             onClick={goPrev}
           >
             <FaArrowLeft />
@@ -74,7 +74,7 @@ const MediaCoverage = () => {
               <div>
                 <div className="p-2 card-img">
                   <img
-                    className="border-2 p-2 rounded-lg"
+                    className="border-2 p-2 rounded-lg h-[240px]"
                     src={img_1}
                     alt="Card 1"
                   />
@@ -181,7 +181,7 @@ const MediaCoverage = () => {
             </SwiperSlide>
           </Swiper>
           <div
-            className="absolute right-[-60px] top-[300px] border-2 rounded-full p-2 text-2xl bg-white cursor-pointer"
+            className="absolute lg:right-[-60px] lg:top-[300px] border-2 rounded-full p-2 text-2xl bg-white cursor-pointer"
             onClick={goNext}
           >
             <FaArrowRight />

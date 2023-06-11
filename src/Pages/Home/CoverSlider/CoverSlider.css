@@ -1,43 +1,75 @@
 #app {
-    height: 100%;
-  }
-  html,
-  body {
-    position: relative;
-    height:100%;
-  }
-  
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 600px; /* Set the height to 600px */
-  }
+  height: 100%;
+}
 
-  .swiper-button-prev, .swiper-button-next,.swiper-pagination {
+.cover-slider-container {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swipper-img {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swipper-img img {
+
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination {
+  display: none;
+}
+
+/* Media Queries */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  .swipper-img img {
+    height: 400px;
+    width: 500px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .swipper-img img {
+    height: 300px;
+  }
+  .slide-content {
     display: none;
   }
+  .swipper-img {
+    height: 300px;
+  }
+}

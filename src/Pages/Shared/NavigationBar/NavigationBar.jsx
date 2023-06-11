@@ -1,13 +1,13 @@
 import { Dropdown, Navbar } from "flowbite-react";
 import React from "react";
 import bar from "../../../assets/navbar/bar.png";
-import { Link } from "react-router-dom";
 import "./NAvigationBar.css";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
-    <div>
-      <Navbar className="custom-navbar py-8">
+    <div className="navbar-container sticky">
+      <Navbar className="custom-navbar sm:py-0 md:py-8">
        
           <span>
           <Navbar.Brand className="navbar-brand">
@@ -65,9 +65,9 @@ const NavigationBar = () => {
             </div>
           </Navbar>
           <Navbar className="nav-items text-white text-xl font-semibold hover-items gap-4">
-            <div to="/contact" className="mr-2 md:mr-4">
+            <Link to="/contact" className="mr-2 md:mr-4">
               <p>Contact</p>
-            </div>
+            </Link>
           </Navbar>
         </Navbar.Collapse>
       </Navbar>

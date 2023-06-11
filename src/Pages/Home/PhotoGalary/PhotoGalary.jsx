@@ -56,7 +56,7 @@ const PhotoGalary = () => {
       </p>
       <div>
         <div data-aos="fade-up">
-          <div className="grid grid-cols-3 gap-6 w-fit mx-auto">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-fit mx-auto">
             {images.map((image, index) => (
               <div
                 key={index}
@@ -95,7 +95,7 @@ const PhotoGalary = () => {
               ))}
             </Carousel>
             <button
-              className="absolute top-4 right-4 px-4 py-2 bg-white rounded-full"
+              className="absolute top-40 right-4 px-4 py-2 bg-white rounded-full z-10 font-bold border-4"
               onClick={closeModal}
             >
               Close

@@ -15,11 +15,11 @@ const Idiology = () => {
 
   return (
     <div data-aos="fade-right">
-      <div className="flex items-center justify-center gap-24 ">
+      <div className="flex lg:flex-row flex-col items-center justify-center gap-24 px-3 lg:pb-0 pb-3">
         <div>
           <img className="w-10/12" src={mujib_img} alt="" />
         </div>
-        <div className="space-y-8 w-3/12">
+        <div className="space-y-8 lg:w-3/12">
           <p className="text-5xl">THE IDEOLOGY</p>
           <p className="text-lg">
             My greatest strength is the love for my people, My greatest weakness

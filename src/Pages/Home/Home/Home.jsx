@@ -12,11 +12,12 @@ import PhotoGalary from "../PhotoGalary/PhotoGalary";
 import MediaCoverage from "../MediaCoverage/MediaCoverage";
 import GoogleMap from "../GoogleMap/GoogleMap";
 import { BiMessageDetail } from "react-icons/bi";
+
 const Home = () => {
   return (
     <div className="relative">
       <div>
-        <CoverSlider></CoverSlider>
+       <CoverSlider></CoverSlider>
         <Services></Services>
         <Idiology></Idiology>
         <LeaderInspiration></LeaderInspiration>
@@ -29,7 +30,7 @@ const Home = () => {
         <MediaCoverage></MediaCoverage>
         <GoogleMap></GoogleMap>
       </div>
-      <div className="fixed bottom-10 right-10 z-50">
+      <div className="fixed lg:bottom-10 lg:right-10 right-[10px] z-50">
         <div className=" rounded-full p-3 bg-[#15E0FB] cursor-pointer">
           <BiMessageDetail className="text-4xl "></BiMessageDetail>
         </div>

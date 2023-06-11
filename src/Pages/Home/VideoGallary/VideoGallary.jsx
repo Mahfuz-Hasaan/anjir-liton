@@ -33,7 +33,7 @@ const VideoGallery = () => {
         </p>
         <div>
           <div data-aos="fade-up">
-            <div className="grid grid-cols-3 gap-6  w-fit mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  w-fit mx-auto">
               {videoIds.map((videoId) => (
                 <div className="w-6/12" key={videoId}>
                   <YouTube videoId={videoId} opts={opts} />
