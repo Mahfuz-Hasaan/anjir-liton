@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./CoverSlider.css";
+// import "./CoverSlider.css";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import img_1 from "../../../assets/cover/202701kalerkantho_jpg.jpg";
 import img_2 from "../../../assets/cover/one.jpeg";
@@ -21,6 +21,7 @@ const CoverSlider = () => {
       <Swiper
         spaceBetween={0} // Set spaceBetween to 0
         centeredSlides={true}
+        loop={true}
         autoplay={{
           delay: 6500,
           disableOnInteraction: false,
@@ -28,7 +29,7 @@ const CoverSlider = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        navigation={false}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >

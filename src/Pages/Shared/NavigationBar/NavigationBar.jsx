@@ -8,7 +8,8 @@ const NavigationBar = () => {
   return (
     <div>
       <Navbar className="custom-navbar py-8">
-        <Link to="/">
+       
+          <span>
           <Navbar.Brand className="navbar-brand">
             <div className="flex">
               <img alt="Flowbite React Logo" className="mr-3 h-16" src={bar} />
@@ -24,7 +25,8 @@ const NavigationBar = () => {
               </div>
             </div>
           </Navbar.Brand>
-        </Link>
+          </span>
+      
         <Navbar.Toggle />
         <Navbar.Collapse className="nav-class">
           <Navbar className="nav-items text-white text-xl font-semibold gap-4">
@@ -34,14 +36,14 @@ const NavigationBar = () => {
             </Dropdown>
           </Navbar>
           <Navbar className="nav-items text-white text-xl font-semibold hover-items gap-4">
-            <Link to="/events" className="mr-2 md:mr-4">
+            <div to="/events" className="mr-2 md:mr-4">
               <p>Events</p>
-            </Link>
+            </div>
           </Navbar>
           <Navbar className="nav-items text-white text-xl font-semibold hover-items gap-4" href="#">
-            <Link to="/news" className="mr-2 md:mr-4">
+            <div to="/news" className="mr-2 md:mr-4">
               <p>News</p>
-            </Link>
+            </div>
           </Navbar>
           <Navbar className="nav-items text-white text-xl font-semibold hover-items gap-4">
             <Dropdown className="dropdown-menu border-0 hover-items" inline label="Media">
@@ -58,14 +60,14 @@ const NavigationBar = () => {
             </Dropdown>
           </Navbar>
           <Navbar className="nav-items text-white text-xl font-semibold hover-items gap-4">
-            <Link to="/publication" className="mr-2 md:mr-4">
+            <div to="/publication" className="mr-2 md:mr-4">
               <p>Publication</p>
-            </Link>
+            </div>
           </Navbar>
           <Navbar className="nav-items text-white text-xl font-semibold hover-items gap-4">
-            <Link to="/contact" className="mr-2 md:mr-4">
+            <div to="/contact" className="mr-2 md:mr-4">
               <p>Contact</p>
-            </Link>
+            </div>
           </Navbar>
         </Navbar.Collapse>
       </Navbar>
